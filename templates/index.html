@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>PhotoShare</title></head>
+<body>
+  <h1>Upload a Photo</h1>
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    Name: <input type="text" name="submitter" required><br><br>
+    Photo: <input type="file" name="image" accept="image/*" required><br><br>
+    <input type="submit" value="Upload">
+  </form>
+</body>
+</html>
