@@ -20,7 +20,7 @@ jobs:
 
     - name: Deploy to EC2
       run: |
-        ssh -o StrictHostKeyChecking=no ec2-user@<EC2_PUBLIC_IP> << 'EOF'
+        ssh -o StrictHostKeyChecking=no ec2-user@18.227.79.99 << 'EOF'
           cd /home/ec2-user/photoshare
           git pull origin main  # Pull the latest code
           # Add additional commands for restarting services or installing dependencies
